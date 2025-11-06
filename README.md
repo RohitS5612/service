@@ -1,5 +1,5 @@
 # eggdrop service script: service.tcl
-service modular-git BETA version, use at your own risk, script may contain bugs which may crash your bot, or totally bork your irc channel.
+Service modular-git BETA version, use at your own risk, script may contain bugs which may crash your bot, or totally bork your IRC channel.
 
 # Requirements:
 
@@ -19,23 +19,24 @@ edit service.conf
 
 edit service.ini, changing the homechan/adminchan/helpchan values
 
-This is the minimal setup, you may go through and change the default kickmsg values, but generally dont touch anything else, especially the chanflags array.
+This is the minimal setup. You may go through and change the default kickmsg values, but generally don't touch anything else, especially the chanflags array.
 
-Edit your eggdrops config file, and add 'source scripts/service/service.tcl' to the end of it. If the bot is loaded, rehash it, otherwise start your bot.
+Edit your eggdrops config file, and add `source scripts/service/service.tcl` to the end of it. If the bot is loaded, rehash it; otherwise, start your bot.
 
 # Upgrade:
 
-cd to scripts/service/ and type: git pull
+cd to scripts/service/ and type `git pull`
 
-this will download all the latest script updates, then rehash your eggdrop.
+This will download all the latest script updates, then rehash your eggdrop.
 
 # Errors:
 
-Please post a bug report, including as much information at possible to the issue tracker. errorInfo output will be helpful. 
+Please post a bug report, including as much information as possible, to the issue tracker. The errorInfo output will be helpful. 
 
 # Help:
 
 Contact r0t3n via quakenet.org channel #r0t3n
+More details on the [wiki](https://github.com/someuser/service/wiki).
 
 Webchat: http://webchat.quakenet.org/?channels=#r0t3n
 
