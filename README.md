@@ -24,7 +24,7 @@
 
 # WARNING
 
-Quakenet doesn't want you giving bots `CHANLEV +m` or `CHANLEV +n`. If you decide to give this bot `CHANLEV +m` or higher, **YOU** are responsible for any of the damages that are caused afterward, **NOT THE DEVELOPERS**
+Quakenet doesn't want you giving bots `CHANLEV +m` or `CHANLEV +n`. If you decide to give this bot `CHANLEV +m` or higher, **YOU** are responsible for any of the damages that are caused afterward, **NOT THE DEVELOPERS.**
 
 ---
 
