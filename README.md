@@ -18,7 +18,13 @@
 
 * **`tcllib`** – required for the `inifile` package to read configuration and commands files
 * **`git`** – required for update management and distribution
-* **`CHANLEV +m`**
+* **`CHANLEV +m`** (required for full functionality, but `CHANLEV +aop` will work too., but not required)
+
+---
+
+# WARNING
+
+Quakenet doesn't want you giving bots `CHANLEV +m` or `CHANLEV +n`. If you decide to give this bot `CHANLEV +m` or higher, **YOU** are responsible for any of the damages that are caused afterward, **NOT THE DEVELOPERS**
 
 ---
 
@@ -47,7 +53,7 @@ cd service
 source scripts/service/service.tcl
 ```
 
-Then rehash your bot (if already running) or start the bot.
+Then you can simply rehash your bot (if it's already running) or start it again.
 
 ---
 
