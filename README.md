@@ -1,45 +1,86 @@
-# eggdrop service script: service.tcl
-Service modular-git BETA version, use at your own risk, script may contain bugs which may crash your bot, or totally bork your IRC channel.
+# Eggdrop Service Script: `service.tcl`
 
-# Requirements:
+**Service Bot** – modular-git BETA version. Use at your own risk: the script may contain bugs that could crash your bot or disrupt your IRC channel.
 
-tcllib - required for the inifile package to read the config and commands file
+---
 
-git - required for update management and distribution
+## Features
 
-# Installation:
+* Custom and random kick messages
+* Basic channel moderation: kick, ban, op, deop, voice, devoice, unban, chanmodes
+* Designed to manage free-op channels
+* Supports mIRC color codes in messages
+* Multiple bot prefixes for commands
 
-cd to your eggdrop's scripts directory, and type: git clone https://github.com/r0t3n/service.git
+---
 
+## Requirements
+
+* **`tcllib`** – required for the `inifile` package to read configuration and commands files
+* **`git`** – required for update management and distribution
+* **`CHANLEV +m`**
+
+---
+
+## Installation
+
+1. Navigate to your Eggdrop's `scripts` directory:
+
+```bash
+cd /path/to/your/eggdrop/scripts
+git clone https://github.com/r0t3n/service.git
 cd service
+```
 
-*** Some settings are read from the .conf and some from the .ini, best to update both until the .conf is fully phased out
+2. **Configuration**
+   Some settings are read from `.conf` and some from `.ini`. Update both until the `.conf` is fully phased out:
 
-edit service.conf
+* Edit `service.conf`
+* Edit `service.ini`, changing `homechan`, `adminchan`, and `helpchan` values
 
-edit service.ini, changing the homechan/adminchan/helpchan values
+> Minimal setup is sufficient. You can change default kick messages, but avoid modifying other settings, **especially the `chanflags` array**.
 
-This is the minimal setup. You may go through and change the default kickmsg values, but generally don't touch anything else, especially the chanflags array.
+3. **Load the script in your Eggdrop**
+   Add the following line to your Eggdrop configuration file:
 
-Edit your eggdrops config file, and add `source scripts/service/service.tcl` to the end of it. If the bot is loaded, rehash it; otherwise, start your bot.
+```tcl
+source scripts/service/service.tcl
+```
 
-# Upgrade:
+Then rehash your bot (if already running) or start the bot.
 
-cd to scripts/service/ and type `git pull`
+---
 
-This will download all the latest script updates, then rehash your eggdrop.
+## Upgrade
 
-# Errors:
+To update the script:
 
-Please post a bug report, including as much information as possible, to the issue tracker. The errorInfo output will be helpful. 
+```bash
+cd /path/to/your/eggdrop/scripts/service
+git pull
+```
 
-# Help:
+After pulling, rehash your Eggdrop to apply the latest updates.
 
-Contact r0t3n via quakenet.org channel #r0t3n
-More details on the [wiki](https://github.com/someuser/service/wiki).
+---
 
-Webchat: http://webchat.quakenet.org/?channels=#r0t3n
+## Errors
 
-# Feature requests
+Please report bugs with as much detail as possible. The output from `errorInfo` will be very helpful.
 
-Contact via IRC or add a feature request to the issue tracker
+* [Issue Tracker](https://github.com/norrchr/issues)
+
+---
+
+## Help
+
+* Contact `r0t3n` via Quakenet’s channel: `#r0t3n`
+* More details: [Service Wiki](https://github.com/norrchr/service/wiki)
+* For bugs or general questions: [open an issue](https://github.com/norrchr/issues) or contact on [IRC](https://webchat.quakenet.org/?channels=#r0t3n)
+
+---
+
+## Feature Requests
+
+* Via [IRC](http://webchat.quakenet.org/?channels=#r0t3n)
+* Or add a request on the [issue tracker](https://github.com/norrchr/issues)
