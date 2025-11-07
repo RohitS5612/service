@@ -18,7 +18,7 @@
 
 * **`tcllib`** – required for the `inifile` package to read configuration and commands files
 * **`git`** – required for update management and distribution
-* **`CHANLEV +m`** (required for full functionality, but `CHANLEV +aop` will work too., but not required)
+* **`CHANLEV +m`** (required for full functionality, but `CHANLEV +aop` will work too.)
 
 ---
 
