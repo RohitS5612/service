@@ -24,7 +24,7 @@
 
 # WARNING
 
-Quakenet doesn't want you giving bots `CHANLEV +m` or `CHANLEV +n`. If you decide to give this bot `CHANLEV +m` or higher, **YOU** are responsible for any of the damages that are caused afterward, **NOT THE DEVELOPERS.**
+Quakenet doesn't want you giving bots `CHANLEV +m` or `CHANLEV +n`. If you decide to give this bot `CHANLEV +m` or higher, **YOU** are responsible for any of the damages that are caused afterward, **NOT THE DEVELOPERS**
 
 ---
 
@@ -34,7 +34,7 @@ Quakenet doesn't want you giving bots `CHANLEV +m` or `CHANLEV +n`. If you decid
 
 ```bash
 cd /path/to/your/eggdrop/scripts
-git clone https://github.com/r0t3n/service.git
+git clone https://github.com/norrchr/service.git
 cd service
 ```
 
